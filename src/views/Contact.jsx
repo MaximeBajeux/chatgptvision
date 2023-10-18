@@ -10,6 +10,7 @@ function ContactPage() {
 
     const myForm = event.target;
     const formData = new FormData(myForm);
+    console.log(formData.values());
 
     fetch("/", {
       method: "POST",
@@ -47,16 +48,7 @@ function ContactPage() {
             {error}
           </div>
         )}
-        <form
-          name="contact"
-          method="POST"
-          netlify
-          data-netlify-honeypot="bot-field"
-          action="/merci"
-          onSubmit={handleSubmit}
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <input type="hidden" name="bot-field" />
+        <form name="contact" method="POST" netlify onSubmit={handleSubmit}>
           <div className="mb-4">
             <label
               htmlFor="message"
@@ -73,12 +65,11 @@ function ContactPage() {
             />
           </div>
           <div className="flex items-center justify-between">
-            <button
+            <input
               type="submit"
+              value="Envoyer"
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            >
-              Envoyer
-            </button>
+            />
           </div>
         </form>
       </div>

@@ -50,7 +50,7 @@ function ContactPage() {
         <form
           name="contact"
           method="POST"
-          data-netlify="true"
+          netlify
           data-netlify-honeypot="bot-field"
           action="/merci"
           onSubmit={handleSubmit}

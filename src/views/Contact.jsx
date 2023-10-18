@@ -27,7 +27,7 @@ function ContactPage() {
             {error}
           </div>
         )}
-        <form name="contact" method="POST" netlify action="#">
+        <form name="contact" method="POST" netlify action="/#">
           <div className="mb-4">
             <label
               htmlFor="message"

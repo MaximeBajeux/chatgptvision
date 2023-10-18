@@ -19,7 +19,7 @@ function HomePage() {
   }, []);
   return (
     <>
-      <svg width="0" height="0" class="Utils_hidden__eYfq_">
+      <svg width="0" height="0">
         <defs>
           <filter id="goo">
             <feGaussianBlur
@@ -82,13 +82,13 @@ function HomePage() {
           className="w-full h-64 object-cover rounded-t-md"
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center frosted-glass-container shadow-lg">
-          <h1 className="text-3xl font-bold frosted-glass">HELLO WORLD!</h1>
-          <p className="mt-2 frosted-glass">Welcome to MyWebSITE</p>
+          <h1 className="text-3xl font-bold frosted-glass">Bonjour le monde</h1>
+          <p className="mt-2 frosted-glass">Bievenue sur MyWebSITE</p>
           <Link
             to="/blog"
             className="mt-4 inline-block bg-blue-500 text-white p-2 rounded hover:bg-blue-700 shadow-md"
           >
-            SEE MORE
+            En voir plus
           </Link>
         </div>
       </div>

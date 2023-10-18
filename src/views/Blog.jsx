@@ -20,7 +20,7 @@ function BlogPage() {
 
   return (
     <div className="p-5">
-      <h1 className="text-2xl font-bold mb-4">All articles</h1>
+      <h1 className="text-2xl font-bold mb-4">Tous nos articles</h1>
       <div className="flex flex-col md:flex-row md:flex-wrap -mx-2">
         {" "}
         {/* Ajoutez ces classes ici */}

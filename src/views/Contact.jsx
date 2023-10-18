@@ -1,12 +1,27 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function ContactPage() {
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
-  const handleSubmit = async (event) => {
-    if (event.isDefaultPrevented()) {
-      setError("Erreur lors de l'envoi du formulaire, veuillez réessayer.");
-    }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => navigate("/merci?message=success"))
+      .catch((error) =>
+        setError(
+          "Erreur: Votre message n'a pas pu être envoyé, veuillez réessayer plus tard"
+        )
+      );
   };
 
   useEffect(() => {

@@ -23,7 +23,7 @@ function Layout() {
           <ul className="hidden lg:flex space-x-4">
             <li>
               <Link to="/" className="text-blue-500 hover:underline">
-                HOME
+                ACCUEIL
               </Link>
             </li>
             <li>
@@ -43,7 +43,7 @@ function Layout() {
             <ul>
               <li className="mb-2">
                 <Link to="/" className="text-blue-500 hover:underline block">
-                  HOME
+                  ACCUEIL
                 </Link>
               </li>
               <li className="mb-2">

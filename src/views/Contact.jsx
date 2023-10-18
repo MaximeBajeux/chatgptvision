@@ -3,27 +3,6 @@ import { useNavigate } from "react-router-dom";
 
 function ContactPage() {
   const [error, setError] = useState(null);
-  const navigate = useNavigate();
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-    console.log(formData.values());
-
-    fetch("/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => navigate("/merci?message=success"))
-      .catch((error) =>
-        setError(
-          "Erreur: Votre message n'a pas pu être envoyé, veuillez réessayer plus tard"
-        )
-      );
-  };
 
   useEffect(() => {
     if (error) {
@@ -48,7 +27,7 @@ function ContactPage() {
             {error}
           </div>
         )}
-        <form name="contact" method="POST" netlify onSubmit={handleSubmit}>
+        <form name="contact" method="POST" netlify action="/merci">
           <div className="mb-4">
             <label
               htmlFor="message"

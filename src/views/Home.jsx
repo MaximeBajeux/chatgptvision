@@ -83,7 +83,7 @@ function HomePage() {
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center frosted-glass-container shadow-lg">
           <h1 className="text-3xl font-bold frosted-glass">Bonjour le monde</h1>
-          <p className="mt-2 frosted-glass">Bievenue sur MyWebSITE</p>
+          <p className="mt-2 frosted-glass">Bienvenue sur MyWebSITE</p>
           <Link
             to="/blog"
             className="mt-4 inline-block bg-blue-500 text-white p-2 rounded hover:bg-blue-700 shadow-md"

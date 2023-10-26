@@ -124,7 +124,7 @@ function HomePage() {
           bonjour, n'hésitez pas à nous contacter.
         </p>
         <Link
-          to="/contact"
+          to="/merci"
           className="inline-block bg-blue-500 text-white p-2 rounded hover:bg-blue-700 shadow-md"
         >
           Contactez-nous

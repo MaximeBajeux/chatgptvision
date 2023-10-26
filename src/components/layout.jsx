@@ -32,7 +32,7 @@ function Layout() {
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="text-blue-500 hover:underline">
+              <Link to="/merci" className="text-blue-500 hover:underline">
                 CONTACT
               </Link>
             </li>
@@ -56,7 +56,7 @@ function Layout() {
               </li>
               <li>
                 <Link
-                  to="/contact"
+                  to="/merci"
                   className="text-blue-500 hover:underline block"
                 >
                   CONTACT

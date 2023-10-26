@@ -3,7 +3,6 @@ import Layout from "./components/layout"; // Assurez-vous que le chemin d'import
 import HomePage from "./views/Home";
 import BlogPage from "./views/Blog";
 import BlogPostPage from "./views/BlogPost";
-import ContactPage from "./views/Contact";
 import ThankYouPage from "./views/ThankYou";
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="blog" element={<BlogPage />} />
           <Route path="blog/:id" element={<BlogPostPage />} />
-          <Route path="contact" element={<ThankYouPage />} />
           <Route path="merci" element={<ThankYouPage />} />
         </Route>
       </Routes>
